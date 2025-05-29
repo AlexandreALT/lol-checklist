@@ -82,7 +82,7 @@ watch(selectedChampions, (val) => {
 
 function toggleSelection(championId) {
   if (selectedChampions.value[championId]) {
-    const confirmed = confirm("Confirmer ?")
+    const confirmed = confirm("Confirm ?")
     if (confirmed) {
       const copy = { ...selectedChampions.value }
       delete copy[championId]
