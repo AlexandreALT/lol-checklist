@@ -1,17 +1,17 @@
 <template>
   <div class="container">
     <div class="header">
-      <h1>Champions League of Legends</h1>
+      <h1>League of Legends champions</h1>
 
       <div class="search-container">
-        <input type="text" v-model="search" placeholder="Rechercher un champion..." class="searchbar" />
+        <input type="text" v-model="search" placeholder="Search a champion..." class="searchbar" />
         <button v-if="search" class="clear-btn" @click="search = ''" aria-label="Clear search">&times;</button>
       </div>
 
       <div class="filters" style="margin-top: 1rem;">
-        <button :class="{ active: filter === 'all' }" @click="filter = 'all'">Tous</button>
-        <button :class="{ active: filter === 'selected' }" @click="filter = 'selected'">Joués</button>
-        <button :class="{ active: filter === 'unselected' }" @click="filter = 'unselected'">Non joués</button>
+        <button :class="{ active: filter === 'all' }" @click="filter = 'all'">All</button>
+        <button :class="{ active: filter === 'selected' }" @click="filter = 'selected'">Played</button>
+        <button :class="{ active: filter === 'unselected' }" @click="filter = 'unselected'">Not played</button>
       </div>
     </div>
 

@@ -5,7 +5,7 @@
         @click="$emit('toggle-selection', champion.id)">
       <img :src="imageUrl" :alt="champion.name" />
       <p>{{ champion.name }}</p>
-      <small v-if="selected" class="date">Joué le {{  formatedDate }}</small>
+      <small v-if="selected" class="date">Played on {{  formatedDate }}</small>
     </div>
 </template>
   
